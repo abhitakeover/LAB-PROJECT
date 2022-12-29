@@ -86,7 +86,7 @@ def choice(stream):
         return ("C002:C003:C004:C005:C006")
 
 def get_batch():
-    with open(f'C:/PythonProgrammingProject_main-folder/Batch.csv','r') as f:
+    with open(f'{path}/Batch.csv','r') as f:
         reader=csv.reader(f)
         rows=[row for row in reader]
         column=[]
@@ -98,7 +98,7 @@ def get_batch():
     return column
 
 def remove(string):
-    with open(f'C:/PythonProgrammingProject_main-folder/Student.csv','r+',newline='') as f:
+    with open(f'{path}/Student.csv','r+',newline='') as f:
         script=csv.reader(f)
         rows=[row for row in script]
         for i in rows:
@@ -540,3 +540,4 @@ print()
 
 last=input("Press Enter to exit")
 subprocess.call("TASKKILL /F /IM notepad.exe", shell=True)
+
