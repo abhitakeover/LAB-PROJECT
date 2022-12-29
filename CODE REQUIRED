@@ -374,7 +374,8 @@ print('\n','Computer Sience and Engineering : CSE','\n',
       'Computer Sience and Engineering and Internet of Things and Business Studies : CSEIOTCSBS','\n',
       'Information Technology : IT','\n',
       'Electrical and Communications Engineering : ECE','\n',
-      'Mechanical Engineering : ME','\n')
+      'Mechanical Engineering : ME','\n',
+      'Electrical Engineering : EE','\n')
 print("Please write all the stream name in short form as mentioned above and in capital letters only!!!")
 print()
       
