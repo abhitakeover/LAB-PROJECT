@@ -30,8 +30,8 @@ def createfile(name,lst):
 def percent(num):
     if stream.lower()=='cse' or stream.lower()=='cseai' or stream.lower()=='cseaiml' or stream.lower()=='cseiotcsbs':
         num=(num*100)//600
-    elif stream.lower()=='it' or stream.lower()=='ece' or stream.lower()=='me':
-        num=(num*100)//500
+    elif stream.lower()=='it' or stream.lower()=='ece' or stream.lower()=='me' or stream.lower()=='ee':
+        num=(num*100)//600
     return num
     
 
@@ -82,7 +82,7 @@ def duplicate(file,attr,pos=0):
 def choice(stream):
     if stream.lower()=='cse' or stream.lower()=='cseai' or stream.lower()=='cseaiml' or stream.lower()=='cseiotcsbs':
         return ("C001:C002:C003:C004:C005:C006")
-    elif stream.lower()=='it' or stream.lower()=='ece' or stream.lower()=='me':
+    elif stream.lower()=='it' or stream.lower()=='ece' or stream.lower()=='me' or stream.lower()=='ee':
         return ("C002:C003:C004:C005:C006")
 
 def get_batch():
@@ -217,8 +217,8 @@ def batch_graph(arg):
             grade_lst+=[grade((lst[i][1]*100)//600)[-2]]
             lst[i][1]=grade((lst[i][1]*100)//600)[-2]
         else:
-            grade_lst+=[grade((lst[i][1]*100)//500)[-2]]
-            lst[i][1]=grade((lst[i][1]*100)//500)[-2]
+            grade_lst+=[grade((lst[i][1]*100)//600)[-2]]
+            lst[i][1]=grade((lst[i][1]*100)//600)[-2]
     grade_no_lst={'A':grade_lst.count('A'),'B':grade_lst.count('B'),'C':grade_lst.count('C'),'D':grade_lst.count('D'),'E':grade_lst.count('E'),'F':grade_lst.count('F')}
 
     labels = list(grade_no_lst.keys())
@@ -303,7 +303,7 @@ def department_graph():
             if lst[i][0][:3]=='CSE':
                 lst[i][1]=(lst[i][1]*100)/600
             else:
-                lst[i][1]=(lst[i][1]*100)/500
+                lst[i][1]=(lst[i][1]*100)/600
         for i in range(len(lst)):
             avg+=lst[i][1]
         avg=int(avg//len(lst))
@@ -363,6 +363,7 @@ while message:
         script.writerow(['IT','Information Technology'])
         script.writerow(['ECE','Electrical and Communications Engineering'])
         script.writerow(['ME','Mechanical Engineering'])
+        script.writerow(['EE','Electrical Engineering'])
     createfile('Student.csv',['Student ID','Name','Class Roll Number','Batch ID'])
     createfile('Examination.csv',['Course Name','Student ID','Marks'])
     break
