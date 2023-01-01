@@ -1,0 +1,14 @@
+Name of the student : Jagadish Kumar 
+Class Roll of the student : 22 
+Stream of the student : EE 
+Your Student ID is : EE2222
+
+Marks obtained in Math is : 97 
+Marks obtained in Python is : 87 
+Marks obtained in Physics is : 94 
+Marks obtained in Chemistry is : 92 
+Marks obtained in Biology is : 99 
+Marks obtained in English is : 75 
+
+You have got 544 in total with 90%
+Outstanding Performance... You have passed the exam with grade A.

@@ -1,0 +1,14 @@
+Name of the student : Sunit Sharma 
+Class Roll of the student : 21 
+Stream of the student : EE 
+Your Student ID is : EE2221
+
+Marks obtained in Math is : 92 
+Marks obtained in Python is : 91 
+Marks obtained in Physics is : 93 
+Marks obtained in Chemistry is : 94 
+Marks obtained in Biology is : 95 
+Marks obtained in English is : 96 
+
+You have got 561 in total with 93%
+Outstanding Performance... You have passed the exam with grade A.
